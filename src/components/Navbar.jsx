@@ -4,7 +4,7 @@ import { FiLogIn, FiUserPlus, FiLogOut } from "react-icons/fi";
 import { FaUserCircle } from "react-icons/fa";
 
 const Navbar = () => {
-  const user = true;
+  const user = false;
   const userEmail = "pk@don.com";
 
   return (
@@ -21,13 +21,13 @@ const Navbar = () => {
 
       {/* Center Links */}
       <div className="flex-1 flex justify-center gap-6">
-        <Link to="/" className="hover:text-[var(--color-secondary)]">
+        <Link to="/" className="text-[var(--color-secondary)]">
           Home
         </Link>
-        <Link to="/about" className="hover:text-[var(--color-secondary)]">
+        <Link to="/about" className="text-[var(--color-secondary)]">
           About
         </Link>
-        <Link to="/career" className="hover:text-[var(--color-secondary)]">
+        <Link to="/career" className="text-[var(--color-secondary)]">
           Career
         </Link>
       </div>
