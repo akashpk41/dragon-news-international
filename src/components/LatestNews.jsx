@@ -18,8 +18,9 @@ const LatestNews = () => {
           className="ml-4 text-[var(--color-primary)] font-medium"
         >
           Match Highlights: Germany vs Spain — as it happened ! &nbsp; | &nbsp;
-          Match Highlights: Argentina vs Brazil — full coverage ! &nbsp; | &nbsp;
-          Breaking: Transfer news updates from Premier League ! &nbsp; | &nbsp;
+          Match Highlights: Argentina vs Brazil — full coverage ! &nbsp; |
+          &nbsp; Breaking: Transfer news updates from Premier League ! &nbsp; |
+          &nbsp;
         </Marquee>
       </div>
     </div>
