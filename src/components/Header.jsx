@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../assets/logo.png";
 import LiveDateTime from "./LiveDateTime";
 import LatestNews from "./LatestNews";
+import Navbar from "./Navbar";
 
 const Header = () => {
   return (
@@ -13,6 +14,7 @@ const Header = () => {
       </p>
       <LiveDateTime />
       <LatestNews/>
+      <Navbar />
     </div>
   );
 };
