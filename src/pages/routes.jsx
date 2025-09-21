@@ -3,6 +3,8 @@ import HomeLayout from "../Layouts/HomeLayout";
 import AuthLayout from "../Layouts/AuthLayout";
 import Home from "./Home";
 import CategoryNews from "./CategoryNews";
+import ErrorPage from "./ErrorPage";
+import Loading from "../components/Loading";
 
 export const router = createBrowserRouter([
   {
@@ -16,6 +18,8 @@ export const router = createBrowserRouter([
       {
         path: "/category/:id",
         element: <CategoryNews />,
+        loader: () => fetch("/news.json"),
+        hydrateFallbackElement: <Loading />,
       },
     ],
   },
@@ -27,5 +31,9 @@ export const router = createBrowserRouter([
   {
     path: "/news",
     element: <h1>News</h1>,
+  },
+  {
+    path: "/*",
+    element: <ErrorPage />,
   },
 ]);
